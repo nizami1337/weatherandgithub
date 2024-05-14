@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar p {
+    color: cadetblue;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.topbar span {
+    display: flex;
+    gap: 5px;
+}
+
+.topbar input {
+    width: 150px;
+    border: none;
+    font-size: 20px;
+    background: none;
+    border-bottom: 2px solid cadetblue;
+}
+
+.topbar button {
+    font-size: 22px;
+    color: cadetblue;
+    border: 2px solid cadetblue;
+    background: none
+}
+
+.topbar button:hover {
+    color: #fff;
+    transition: .2s;
+    cursor: pointer;
+    background: cadetblue;
+}
+
+.bottombar {
+    display: none;
+    padding: 20px 30px;
+    background-color: #fff;
+}
+
+.bottombar__top {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.bottombar__bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bottombar__bottom__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottombar__bottom__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottombar__bottom__center span {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.bottombar__bottom__right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottombar__bottom__right div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottombar__top span {
+    font-weight: 700;
+    color: cadetblue;
+}
+
+.git__bottombar {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.git__bottombar__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#git__profilepic {
+    width: 150px;
+    height: 150px;
+}
+
+.git__data, .git__data__follow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}

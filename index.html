@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <p>CURRENT WEATHER</p>
+            <span><input type="text" id="cityInput" placeholder="City/Region"><button id="lookupBtn">Search</button></span>
+        </div>
+        <div class="bottombar">
+            <div class="bottombar__top">
+                <span id="weatherCity">Kiev</span>
+                <span id="weatherDate">05.03.2020</span>
+            </div>
+            <div class="bottombar__bottom">
+                <div class="bottombar__bottom__left">
+                    <span id="weatherMain">Sunny</span>
+                    <img src="" id="weatherCondition">
+                </div>
+                <div class="bottombar__bottom__center">
+                    <span id="currentTemp">18C</span>
+                </div>
+                <div class="bottombar__bottom__right">
+                    <div><p>Min Temperature</p><span id="minTemp">1</span></div>
+                    <div><p>Max Temperature</p><span id="maxTemp">1</span></div>
+                    <div><p>Wind Speed (m/s)</p><span id="windSpeed">1</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="topbar">
+            <p>GITHUB PROFILES</p>
+            <span><input type="text" id="usernameInput" placeholder="Username"><button id="gitLookupBtn">Search</button></span>
+        </div>
+        <div class="git__bottombar">
+            <div class="git__bottombar__left">
+                <img src="" id="git__profilepic">
+                <div class="git__data">
+                    <b>Name: </b>
+                    <span id="git__data__name"></span>
+                </div>
+                <div class="git__data">
+                    <b>Userame: </b>
+                    <span id="git__data__username"></span>
+                </div>
+            </div>
+            <div class="git__bottombar__right">
+                <div class="git__data">
+                    <b>URL: </b>
+                    <span id="git__data__url"></span>
+                </div>
+                <div class="git__data">
+                    <b>Blog: </b>
+                    <span id="git__data__blog"></span>
+                </div>
+                <div class="git__data">
+                    <b>City: </b>
+                    <span id="git__data__city"></span>
+                </div>
+                <div class="git__data">
+                    <b>Email: </b>
+                    <span id="git__data__email"></span>
+                </div>
+                <div class="git__data__follow">
+                    <span>
+                        <b>Followers: </b>
+                        <span id="git__data__followers"></span>
+                    </span>
+                    <span>
+                        <b>Following: </b>
+                        <span id="git__data__following"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
